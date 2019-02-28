@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set Environment
-ROOT_DIR="$PWD"/../..
+ROOT_DIR="$PWD"/../../..
 PENTAHO_ENV="${PENTAHO_ENV:-config-pdi-local}"
 
 echo Running with "$PENTAHO_ENV" environment settings
