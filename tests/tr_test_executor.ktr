@@ -458,14 +458,11 @@
 - P_PROJECT_NAME
 
 Tests Input:
-${ROOT_DIR}/etl/${P_PROJECT_NAME}/tests/test-set.xml
-
-Tests Results:
-${FRAMEWORK_HOME}/tests/surefire-reports/results_final</note>
+${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-set.xml</note>
       <xloc>32</xloc>
       <yloc>32</yloc>
-      <width>360</width>
-      <heigth>136</heigth>
+      <width>248</width>
+      <heigth>65</heigth>
       <fontname>Segoe UI</fontname>
       <fontsize>9</fontsize>
       <fontbold>N</fontbold>
@@ -483,11 +480,11 @@ ${FRAMEWORK_HOME}/tests/surefire-reports/results_final</note>
     </notepad>
     <notepad>
       <note>Producing JUnit Test Report XML
-Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note>
+${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       <xloc>704</xloc>
       <yloc>128</yloc>
-      <width>418</width>
-      <heigth>42</heigth>
+      <width>304</width>
+      <heigth>32</heigth>
       <fontname>Segoe UI</fontname>
       <fontsize>9</fontsize>
       <fontbold>N</fontbold>
@@ -1365,7 +1362,7 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
     <rownum_field />
     <encoding>UTF-8</encoding>
     <file>
-      <name>${ROOT_DIR}/etl/${P_PROJECT_NAME}/tests/test-set.xml</name>
+      <name>${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-set.xml</name>
       <filemask />
       <exclude_filemask />
       <file_required>N</file_required>
@@ -1580,7 +1577,7 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
     <fileNameField />
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</name>
+      <name>${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>xml</extention>
@@ -1739,7 +1736,7 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
     </partitioning>
     <formula>
       <field_name>test_filename</field_name>
-      <formula_string>[root_dir]&amp;"/etl/"&amp;[project_name]&amp;"/tests/"&amp;[location]</formula_string>
+      <formula_string>[root_dir]&amp;"/"&amp;[project_name]&amp;"/tests/"&amp;[location]</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
