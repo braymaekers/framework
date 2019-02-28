@@ -16,11 +16,6 @@
       <default_value>sales_dwh</default_value>
       <description />
     </parameter>
-    <parameter>
-      <name>P_WORKSPACE_DIR</name>
-      <default_value>/var/lib/jenkins/workspace/PentahoCI - sales_dwh</default_value>
-      <description />
-    </parameter>
   </parameters>
   <connection>
     <name>pdi_logging</name>
@@ -419,6 +414,7 @@
       <name>START</name>
       <description />
       <type>SPECIAL</type>
+      <attributes />
       <start>Y</start>
       <dummy>N</dummy>
       <repeat>N</repeat>
@@ -434,11 +430,13 @@
       <nr>0</nr>
       <xloc>96</xloc>
       <yloc>64</yloc>
+      <attributes_kjc />
     </entry>
     <entry>
       <name>tr_test_executor</name>
       <description />
       <type>TRANS</type>
+      <attributes />
       <specification_method>filename</specification_method>
       <trans_object_id />
       <filename>${FRAMEWORK_DIR}/tests/tr_test_executor.ktr</filename>
@@ -469,17 +467,13 @@
           <stream_name />
           <value>${P_PROJECT_NAME}</value>
         </parameter>
-        <parameter>
-          <name>P_WORKSPACE_DIR</name>
-          <stream_name />
-          <value>${P_WORKSPACE_DIR}</value>
-        </parameter>
       </parameters>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>224</xloc>
       <yloc>64</yloc>
+      <attributes_kjc />
     </entry>
   </entries>
   <hops>
