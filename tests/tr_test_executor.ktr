@@ -2,9 +2,9 @@
 <transformation>
   <info>
     <name>tr_test_executor</name>
-    <description/>
-    <extended_description/>
-    <trans_version/>
+    <description />
+    <extended_description />
+    <trans_version />
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
     <directory>/</directory>
@@ -12,17 +12,17 @@
       <parameter>
         <name>P_PROJECT_NAME</name>
         <default_value>sales_dwh</default_value>
-        <description/>
+        <description />
       </parameter>
     </parameters>
     <log>
       <trans-log-table>
-        <connection/>
-        <schema/>
-        <table/>
-        <size_limit_lines/>
-        <interval/>
-        <timeout_days/>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -47,37 +47,37 @@
           <id>LINES_READ</id>
           <enabled>Y</enabled>
           <name>LINES_READ</name>
-          <subject/>
+          <subject />
         </field>
         <field>
           <id>LINES_WRITTEN</id>
           <enabled>Y</enabled>
           <name>LINES_WRITTEN</name>
-          <subject/>
+          <subject />
         </field>
         <field>
           <id>LINES_UPDATED</id>
           <enabled>Y</enabled>
           <name>LINES_UPDATED</name>
-          <subject/>
+          <subject />
         </field>
         <field>
           <id>LINES_INPUT</id>
           <enabled>Y</enabled>
           <name>LINES_INPUT</name>
-          <subject/>
+          <subject />
         </field>
         <field>
           <id>LINES_OUTPUT</id>
           <enabled>Y</enabled>
           <name>LINES_OUTPUT</name>
-          <subject/>
+          <subject />
         </field>
         <field>
           <id>LINES_REJECTED</id>
           <enabled>Y</enabled>
           <name>LINES_REJECTED</name>
-          <subject/>
+          <subject />
         </field>
         <field>
           <id>ERRORS</id>
@@ -131,11 +131,11 @@
         </field>
       </trans-log-table>
       <perf-log-table>
-        <connection/>
-        <schema/>
-        <table/>
-        <interval/>
-        <timeout_days/>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -213,10 +213,10 @@
         </field>
       </perf-log-table>
       <channel-log-table>
-        <connection/>
-        <schema/>
-        <table/>
-        <timeout_days/>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -279,10 +279,10 @@
         </field>
       </channel-log-table>
       <step-log-table>
-        <connection/>
-        <schema/>
-        <table/>
-        <timeout_days/>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -355,10 +355,10 @@
         </field>
       </step-log-table>
       <metrics-log-table>
-        <connection/>
-        <schema/>
-        <table/>
-        <timeout_days/>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -407,9 +407,9 @@
       </metrics-log-table>
     </log>
     <maxdate>
-      <connection/>
-      <table/>
-      <field/>
+      <connection />
+      <table />
+      <field />
       <offset>0.0</offset>
       <maxdiff>0.0</maxdiff>
     </maxdate>
@@ -420,7 +420,7 @@
     <feedback_shown>Y</feedback_shown>
     <feedback_size>50000</feedback_size>
     <using_thread_priorities>Y</using_thread_priorities>
-    <shared_objects_file/>
+    <shared_objects_file />
     <capture_step_performance>N</capture_step_performance>
     <step_performance_capturing_delay>1000</step_performance_capturing_delay>
     <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
@@ -433,12 +433,12 @@
         <name>MyRemoteExecutor</name>
         <hostname>ec2-54-171-42-36.eu-west-1.compute.amazonaws.com</hostname>
         <port>8888</port>
-        <webAppName/>
+        <webAppName />
         <username>cluster</username>
         <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
-        <proxy_hostname/>
-        <proxy_port/>
-        <non_proxy_hosts/>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
         <master>N</master>
         <sslMode>N</sslMode>
       </slaveserver>
@@ -513,9 +513,9 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
     <port>${PDI_LOGGING.PORT}</port>
     <username>${PDI_LOGGING.USER}</username>
     <password>${PDI_LOGGING.PASS}</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
     <attributes>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
@@ -690,20 +690,20 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Abort</name>
     <type>Abort</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <row_threshold>0</row_threshold>
     <message>ERROR IN EVALUATION</message>
     <always_log_rows>Y</always_log_rows>
     <abort_option>ABORT_WITH_ERROR</abort_option>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -719,20 +719,20 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Abort 2</name>
     <type>Abort</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <row_threshold>0</row_threshold>
     <message>ERROR IN EVALUATION</message>
     <always_log_rows>Y</always_log_rows>
     <abort_option>ABORT_WITH_ERROR</abort_option>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -748,18 +748,18 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Append streams</name>
     <type>Append</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <head_name>final tag</head_name>
     <tail_name>replace with new lines</tail_name>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -775,18 +775,18 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Append streams 2</name>
     <type>Append</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <head_name>Append streams</head_name>
     <tail_name>Close XML</tail_name>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -802,22 +802,22 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Close XML</name>
     <type>DataGrid</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <fields>
       <field>
         <name>tag</name>
         <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
+        <format />
+        <currency />
+        <decimal />
+        <group />
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
@@ -828,8 +828,8 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
         <item>&lt;/testsuite></item>
       </line>
     </data>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -845,16 +845,16 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Continue</name>
     <type>Dummy</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -870,16 +870,16 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Continue 2</name>
     <type>Dummy</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -895,42 +895,42 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Execute Job</name>
     <type>TransExecutor</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <specification_method>filename</specification_method>
-    <trans_object_id/>
-    <trans_name/>
+    <trans_object_id />
+    <trans_name />
     <filename>${FRAMEWORK_DIR}/tests/tr_execute_test_job.ktr</filename>
-    <directory_path/>
+    <directory_path />
     <group_size>1</group_size>
-    <group_field/>
-    <group_time/>
+    <group_field />
+    <group_time />
     <parameters>
       <variablemapping>
         <variable>P_CLASS</variable>
         <field>class</field>
-        <input/>
+        <input />
       </variablemapping>
       <variablemapping>
         <variable>P_FILENAME</variable>
         <field>test_filename</field>
-        <input/>
+        <input />
       </variablemapping>
       <variablemapping>
         <variable>P_NAME</variable>
         <field>name</field>
-        <input/>
+        <input />
       </variablemapping>
       <variablemapping>
         <variable>P_NPACKAGE</variable>
         <field>npackage</field>
-        <input/>
+        <input />
       </variablemapping>
       <inherit_all_vars>Y</inherit_all_vars>
     </parameters>
@@ -962,11 +962,11 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
       <length>-1</length>
       <precision>-1</precision>
     </result_rows_field>
-    <result_files_target_step/>
+    <result_files_target_step />
     <result_files_file_name_field>FileName</result_files_file_name_field>
-    <executors_output_step/>
-    <attributes/>
-    <cluster_schema/>
+    <executors_output_step />
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -982,42 +982,42 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Execute Trans</name>
     <type>TransExecutor</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <specification_method>filename</specification_method>
-    <trans_object_id/>
-    <trans_name/>
+    <trans_object_id />
+    <trans_name />
     <filename>${FRAMEWORK_DIR}/tests/tr_execute_test_trans.ktr</filename>
-    <directory_path/>
+    <directory_path />
     <group_size>1</group_size>
-    <group_field/>
-    <group_time/>
+    <group_field />
+    <group_time />
     <parameters>
       <variablemapping>
         <variable>P_CLASS</variable>
         <field>class</field>
-        <input/>
+        <input />
       </variablemapping>
       <variablemapping>
         <variable>P_FILENAME</variable>
         <field>test_filename</field>
-        <input/>
+        <input />
       </variablemapping>
       <variablemapping>
         <variable>P_NAME</variable>
         <field>name</field>
-        <input/>
+        <input />
       </variablemapping>
       <variablemapping>
         <variable>P_NPACKAGE</variable>
         <field>npackage</field>
-        <input/>
+        <input />
       </variablemapping>
       <inherit_all_vars>Y</inherit_all_vars>
     </parameters>
@@ -1049,11 +1049,11 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
       <length>-1</length>
       <precision>-1</precision>
     </result_rows_field>
-    <result_files_target_step/>
+    <result_files_target_step />
     <result_files_file_name_field>FileName</result_files_file_name_field>
-    <executors_output_step/>
-    <attributes/>
-    <cluster_schema/>
+    <executors_output_step />
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1069,21 +1069,21 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Group errors</name>
     <type>GroupBy</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <all_rows>N</all_rows>
     <ignore_aggregate>N</ignore_aggregate>
-    <field_ignore/>
+    <field_ignore />
     <directory>%%java.io.tmpdir%%</directory>
     <prefix>grp</prefix>
     <add_linenr>N</add_linenr>
-    <linenr_fieldname/>
+    <linenr_fieldname />
     <give_back_row>N</give_back_row>
     <group>
       </group>
@@ -1092,17 +1092,17 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
         <aggregate>error_count</aggregate>
         <subject>erros</subject>
         <type>SUM</type>
-        <valuefield/>
+        <valuefield />
       </field>
       <field>
         <aggregate>count</aggregate>
         <subject>erros</subject>
         <type>COUNT_ALL</type>
-        <valuefield/>
+        <valuefield />
       </field>
     </fields>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1118,20 +1118,20 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Sort by order</name>
     <type>SortRows</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <directory>%%java.io.tmpdir%%</directory>
     <prefix>out</prefix>
     <sort_size>1000000</sort_size>
-    <free_memory/>
+    <free_memory />
     <compress>N</compress>
-    <compress_variable/>
+    <compress_variable />
     <unique_rows>N</unique_rows>
     <fields>
       <field>
@@ -1143,8 +1143,8 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
         <presorted>N</presorted>
       </field>
     </fields>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1160,13 +1160,13 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Success?</name>
     <type>FilterRows</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <send_true_to>Continue</send_true_to>
     <send_false_to>Abort</send_false_to>
@@ -1175,7 +1175,7 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
         <negated>N</negated>
         <leftvalue>ExecutionNrErrors</leftvalue>
         <function>=</function>
-        <rightvalue/>
+        <rightvalue />
         <value>
           <name>constant</name>
           <type>Boolean</type>
@@ -1183,12 +1183,12 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
           <length>-1</length>
           <precision>-1</precision>
           <isnull>N</isnull>
-          <mask/>
+          <mask />
         </value>
       </condition>
     </compare>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1204,13 +1204,13 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>Success? 2</name>
     <type>FilterRows</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <send_true_to>Continue 2</send_true_to>
     <send_false_to>Abort 2</send_false_to>
@@ -1219,7 +1219,7 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
         <negated>N</negated>
         <leftvalue>ExecutionNrErrors</leftvalue>
         <function>=</function>
-        <rightvalue/>
+        <rightvalue />
         <value>
           <name>constant</name>
           <type>Boolean</type>
@@ -1227,12 +1227,12 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
           <length>-1</length>
           <precision>-1</precision>
           <isnull>N</isnull>
-          <mask/>
+          <mask />
         </value>
       </condition>
     </compare>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1248,13 +1248,13 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>error?</name>
     <type>Janino</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <formula>
       <field_name>erros</field_name>
@@ -1262,10 +1262,10 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
       <value_type>Integer</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
-      <replace_field/>
+      <replace_field />
     </formula>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1281,13 +1281,13 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>final tag</name>
     <type>SelectValues</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <fields>
       <field>
@@ -1295,8 +1295,8 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1312,13 +1312,13 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>final tag 2</name>
     <type>SelectValues</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <fields>
       <field>
@@ -1326,8 +1326,8 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1343,16 +1343,16 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>load test-set.xml</name>
     <type>getXMLData</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <include>N</include>
-    <include_field/>
+    <include_field />
     <rownum>N</rownum>
     <addresultfile>N</addresultfile>
     <namespaceaware>N</namespaceaware>
@@ -1362,12 +1362,12 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
     <usetoken>N</usetoken>
     <IsIgnoreEmptyFile>N</IsIgnoreEmptyFile>
     <doNotFailIfNoFile>Y</doNotFailIfNoFile>
-    <rownum_field/>
+    <rownum_field />
     <encoding>UTF-8</encoding>
     <file>
       <name>${ROOT_DIR}/etl/${P_PROJECT_NAME}/tests/test-set.xml</name>
-      <filemask/>
-      <exclude_filemask/>
+      <filemask />
+      <exclude_filemask />
       <file_required>N</file_required>
       <include_subfolders>N</include_subfolders>
     </file>
@@ -1378,10 +1378,10 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
         <element_type>attribut</element_type>
         <result_type>valueof</result_type>
         <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
+        <format />
+        <currency />
+        <decimal />
+        <group />
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -1393,10 +1393,10 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
         <element_type>attribut</element_type>
         <result_type>valueof</result_type>
         <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
+        <format />
+        <currency />
+        <decimal />
+        <group />
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -1408,10 +1408,10 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
         <element_type>attribut</element_type>
         <result_type>valueof</result_type>
         <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
+        <format />
+        <currency />
+        <decimal />
+        <group />
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -1423,10 +1423,10 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
         <element_type>attribut</element_type>
         <result_type>valueof</result_type>
         <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
+        <format />
+        <currency />
+        <decimal />
+        <group />
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -1438,10 +1438,10 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
         <element_type>attribut</element_type>
         <result_type>valueof</result_type>
         <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
+        <format />
+        <currency />
+        <decimal />
+        <group />
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -1452,18 +1452,18 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
     <loopxpath>/test-set/test</loopxpath>
     <IsInFields>N</IsInFields>
     <IsAFile>N</IsAFile>
-    <XmlField/>
-    <prunePath/>
-    <shortFileFieldName/>
-    <pathFieldName/>
-    <hiddenFieldName/>
-    <lastModificationTimeFieldName/>
-    <uriNameFieldName/>
-    <rootUriNameFieldName/>
-    <extensionFieldName/>
-    <sizeFieldName/>
-    <attributes/>
-    <cluster_schema/>
+    <XmlField />
+    <prunePath />
+    <shortFileFieldName />
+    <pathFieldName />
+    <hiddenFieldName />
+    <lastModificationTimeFieldName />
+    <uriNameFieldName />
+    <rootUriNameFieldName />
+    <extensionFieldName />
+    <sizeFieldName />
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1479,13 +1479,13 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>name and filename</name>
     <type>SelectValues</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <fields>
       <field>
@@ -1502,8 +1502,8 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1519,30 +1519,30 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>replace with new lines</name>
     <type>ReplaceString</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <fields>
       <field>
         <in_stream_name>tag</in_stream_name>
-        <out_stream_name/>
+        <out_stream_name />
         <use_regex>no</use_regex>
         <replace_string>-_;)(;_-</replace_string>
         <replace_by_string>&amp;#10;</replace_by_string>
         <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
+        <replace_field_by_string />
         <whole_word>no</whole_word>
         <case_sensitive>no</case_sensitive>
         <is_unicode>no</is_unicode>
       </field>
     </fields>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1558,16 +1558,16 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>results_final</name>
     <type>TextFileOutput</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <separator>;</separator>
-    <enclosure/>
+    <enclosure />
     <enclosure_forced>N</enclosure_forced>
     <enclosure_fix_disabled>N</enclosure_fix_disabled>
     <header>N</header>
@@ -1575,9 +1575,9 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
     <format>DOS</format>
     <compression>None</compression>
     <encoding>UTF-8</encoding>
-    <endedLine/>
+    <endedLine />
     <fileNameInField>N</fileNameInField>
-    <fileNameField/>
+    <fileNameField />
     <create_parent_folder>Y</create_parent_folder>
     <file>
       <name>${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</name>
@@ -1590,7 +1590,7 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
       <add_date>N</add_date>
       <add_time>N</add_time>
       <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
+      <date_time_format />
       <add_to_result_filenames>Y</add_to_result_filenames>
       <pad>N</pad>
       <fast_dump>N</fast_dump>
@@ -1600,18 +1600,18 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
       <field>
         <name>tag</name>
         <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
         <trim_type>none</trim_type>
         <length>-1</length>
         <precision>-1</precision>
       </field>
     </fields>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1627,13 +1627,13 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>root tag</name>
     <type>Janino</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <formula>
       <field_name>tag</field_name>
@@ -1641,10 +1641,10 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
-      <replace_field/>
+      <replace_field />
     </formula>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1660,16 +1660,16 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>split</name>
     <type>Dummy</type>
-    <description/>
+    <description />
     <distribute>N</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1685,13 +1685,13 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>split based on type</name>
     <type>FilterRows</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <send_true_to>Execute Trans</send_true_to>
     <send_false_to>Execute Job</send_false_to>
@@ -1700,7 +1700,7 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
         <negated>N</negated>
         <leftvalue>test_filename</leftvalue>
         <function>CONTAINS</function>
-        <rightvalue/>
+        <rightvalue />
         <value>
           <name>constant</name>
           <type>String</type>
@@ -1708,12 +1708,12 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
           <length>-1</length>
           <precision>-1</precision>
           <isnull>N</isnull>
-          <mask/>
+          <mask />
         </value>
       </condition>
     </compare>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1729,13 +1729,13 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>test_filename</name>
     <type>Formula</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <formula>
       <field_name>test_filename</field_name>
@@ -1743,10 +1743,10 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
-      <replace_field/>
+      <replace_field />
     </formula>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
@@ -1762,23 +1762,23 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
   <step>
     <name>variables</name>
     <type>GetVariable</type>
-    <description/>
+    <description />
     <distribute>Y</distribute>
-    <custom_distribution/>
+    <custom_distribution />
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name/>
+      <schema_name />
     </partitioning>
     <fields>
       <field>
         <name>root_dir</name>
         <variable>${ROOT_DIR}</variable>
         <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
+        <format />
+        <currency />
+        <decimal />
+        <group />
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -1787,17 +1787,17 @@ Will be stored at ${ROOT_DIR}/test-reports/${P_PROJECT_NAME}/results_final</note
         <name>project_name</name>
         <variable>${P_PROJECT_NAME}</variable>
         <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
+        <format />
+        <currency />
+        <decimal />
+        <group />
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
     </fields>
-    <attributes/>
-    <cluster_schema/>
+    <attributes />
+    <cluster_schema />
     <remotesteps>
       <input>
       </input>
