@@ -557,13 +557,18 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>get trans results</from>
-      <to>get variables</to>
+      <from>get variables</from>
+      <to>Success?</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>get variables</from>
-      <to>Success?</to>
+      <from>get trans results</from>
+      <to>ExecutionTimeSeconds</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ExecutionTimeSeconds</from>
+      <to>get variables</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -587,7 +592,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>960</xloc>
+      <xloc>1088</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
@@ -631,7 +636,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>576</xloc>
+      <xloc>704</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
@@ -704,7 +709,7 @@
     </partitioning>
     <formula>
       <field_name>tag</field_name>
-      <formula_string>"&lt;testcase name=\""+name+"\" classname=\""+group+"\" package=\""+npackage+"\" time=\""+"\">"+ExecutionTime+"&lt;failure type=\"type\" message=\"ERROR Found\" />&lt;system-out>&lt;![CDATA["+ExecutionLogText+"]]&gt;&lt;/system-out>&lt;/testcase>"</formula_string>
+      <formula_string>"&lt;testcase name=\""+name+"\" classname=\""+group+"\" package=\""+npackage+"\" time=\""+"\">"+ExecutionTimeSeconds+"&lt;failure type=\"type\" message=\"ERROR Found\" />&lt;system-out>&lt;![CDATA["+ExecutionLogText+"]]&gt;&lt;/system-out>&lt;/testcase>"</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -727,7 +732,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>704</xloc>
+      <xloc>832</xloc>
       <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
@@ -745,7 +750,7 @@
     </partitioning>
     <formula>
       <field_name>tag</field_name>
-      <formula_string>"&lt;testcase name=\""+name+"\" classname=\""+group+"\" package=\""+npackage+"\" time=\""+ExecutionTime+"\">&lt;system-out>&lt;![CDATA["+ExecutionLogText+"]]&gt;&lt;/system-out>&lt;/testcase>"</formula_string>
+      <formula_string>"&lt;testcase name=\""+name+"\" classname=\""+group+"\" package=\""+npackage+"\" time=\""+ExecutionTimeSeconds+"\">&lt;system-out>&lt;![CDATA["+ExecutionLogText+"]]&gt;&lt;/system-out>&lt;/testcase>"</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -768,7 +773,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>704</xloc>
+      <xloc>832</xloc>
       <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
@@ -895,7 +900,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>448</xloc>
+      <xloc>576</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
@@ -929,7 +934,40 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>832</xloc>
+      <xloc>960</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ExecutionTimeSeconds</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>ExecutionTimeSeconds</field_name>
+      <formula_string>[ExecutionTime]/1000</formula_string>
+      <value_type>Number</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>448</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
