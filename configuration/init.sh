@@ -3,7 +3,7 @@
 # Set Environment
 ROOT_DIR="$PWD"/../../..
 
-export PROJECT_NAME=$(basename $(dirname $PWD) -configuration)
+#export PROJECT_NAME=$(basename $(dirname $PWD) -configuration)
 PENTAHO_ENV="${PENTAHO_ENV:-config-pdi-local}"
 
 echo "***" Running with "$PENTAHO_ENV" environment settings "***"
