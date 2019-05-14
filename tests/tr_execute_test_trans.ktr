@@ -578,6 +578,7 @@
       <method>none</method>
       <schema_name />
     </partitioning>
+    <attributes />
     <cluster_schema />
     <remotesteps>
       <input>
@@ -621,6 +622,7 @@
         </value>
       </condition>
     </compare>
+    <attributes />
     <cluster_schema />
     <remotesteps>
       <input>
@@ -675,6 +677,7 @@
     <result_files_target_step />
     <result_files_file_name_field>FileName</result_files_file_name_field>
     <executors_output_step />
+    <attributes />
     <cluster_schema />
     <remotesteps>
       <input>
@@ -701,7 +704,7 @@
     </partitioning>
     <formula>
       <field_name>tag</field_name>
-      <formula_string>"&lt;testcase name=\""+name+"\" classname=\""+group+"\" package=\""+npackage+"\" time=\""+"\">"+"&lt;failure type=\"type\" message=\"ERROR Found\" />&lt;system-out>&lt;![CDATA["+ExecutionLogText+"]]&gt;&lt;/system-out>&lt;/testcase>"</formula_string>
+      <formula_string>"&lt;testcase name=\""+name+"\" classname=\""+group+"\" package=\""+npackage+"\" time=\""+"\">"+ExecutionTime+"&lt;failure type=\"type\" message=\"ERROR Found\" />&lt;system-out>&lt;![CDATA["+ExecutionLogText+"]]&gt;&lt;/system-out>&lt;/testcase>"</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -715,6 +718,7 @@
       <value_precision>-1</value_precision>
       <replace_field />
     </formula>
+    <attributes />
     <cluster_schema />
     <remotesteps>
       <input>
@@ -741,7 +745,7 @@
     </partitioning>
     <formula>
       <field_name>tag</field_name>
-      <formula_string>"&lt;testcase name=\""+name+"\" classname=\""+group+"\" package=\""+npackage+"\" time=\""+"\">&lt;system-out>&lt;![CDATA["+ExecutionLogText+"]]&gt;&lt;/system-out>&lt;/testcase>"</formula_string>
+      <formula_string>"&lt;testcase name=\""+name+"\" classname=\""+group+"\" package=\""+npackage+"\" time=\""+ExecutionTime+"\">&lt;system-out>&lt;![CDATA["+ExecutionLogText+"]]&gt;&lt;/system-out>&lt;/testcase>"</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -755,6 +759,7 @@
       <value_precision>-1</value_precision>
       <replace_field />
     </formula>
+    <attributes />
     <cluster_schema />
     <remotesteps>
       <input>
@@ -793,6 +798,7 @@
         <trim_type>none</trim_type>
       </field>
     </fields>
+    <attributes />
     <cluster_schema />
     <remotesteps>
       <input>
@@ -817,6 +823,7 @@
       <method>none</method>
       <schema_name />
     </partitioning>
+    <attributes />
     <cluster_schema />
     <remotesteps>
       <input>
@@ -879,6 +886,7 @@
         <trim_type>none</trim_type>
       </field>
     </fields>
+    <attributes />
     <cluster_schema />
     <remotesteps>
       <input>
@@ -912,6 +920,7 @@
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
+    <attributes />
     <cluster_schema />
     <remotesteps>
       <input>

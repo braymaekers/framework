@@ -564,11 +564,6 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Group errors</from>
-      <to>root tag</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>replace with new lines</from>
       <to>Append streams</to>
       <enabled>Y</enabled>
@@ -683,6 +678,16 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       <to>Sort by order</to>
       <enabled>Y</enabled>
     </hop>
+    <hop>
+      <from>Group errors</from>
+      <to>batch_id</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>batch_id</from>
+      <to>root tag</to>
+      <enabled>Y</enabled>
+    </hop>
   </order>
   <step>
     <name>Abort</name>
@@ -764,7 +769,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1088</xloc>
+      <xloc>1216</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -791,7 +796,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1216</xloc>
+      <xloc>1344</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -834,7 +839,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1216</xloc>
+      <xloc>1344</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1243,6 +1248,45 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
     </GUI>
   </step>
   <step>
+    <name>batch_id</name>
+    <type>GetVariable</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>batch_id</name>
+        <variable>${V_BATCH_ID}</variable>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>960</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>error?</name>
     <type>Janino</type>
     <description />
@@ -1301,7 +1345,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1088</xloc>
+      <xloc>1216</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1332,7 +1376,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>832</xloc>
+      <xloc>960</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1547,7 +1591,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>960</xloc>
+      <xloc>1088</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1616,7 +1660,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1344</xloc>
+      <xloc>1472</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1634,7 +1678,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
     </partitioning>
     <formula>
       <field_name>tag</field_name>
-      <formula_string>"&lt;testsuite tests=\""+ count + "\" failures=\""+error_count+"\" skipped=\"0\" errors=\"0\">"</formula_string>
+      <formula_string>"&lt;testsuite name=\"" + "Test Suite Batch ID " + batch_id + "\" tests=\""+ count + "\" failures=\""+error_count+"\" skipped=\"0\" errors=\"0\">"</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -1649,7 +1693,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>960</xloc>
+      <xloc>1088</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
