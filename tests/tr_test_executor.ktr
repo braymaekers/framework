@@ -501,10 +501,10 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       <drawshadow>Y</drawshadow>
     </notepad>
     <notepad>
-      <note>contains 'tr'</note>
+      <note>contains 'tr_'</note>
       <xloc>288</xloc>
       <yloc>352</yloc>
-      <width>81</width>
+      <width>87</width>
       <heigth>26</heigth>
       <fontname>.SF NS Text</fontname>
       <fontsize>13</fontsize>
@@ -660,11 +660,6 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>split based on type</from>
-      <to>Execute Trans</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Success? 2</from>
       <to>Continue 2</to>
       <enabled>Y</enabled>
@@ -685,11 +680,6 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>split based on type</from>
-      <to>Execute Job</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>variables</from>
       <to>test_filename</to>
       <enabled>Y</enabled>
@@ -707,6 +697,16 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
     <hop>
       <from>batch_id</from>
       <to>root tag</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>split based on type</from>
+      <to>Execute Job</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>split based on type</from>
+      <to>Execute Trans</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -1766,7 +1766,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
         <value>
           <name>constant</name>
           <type>String</type>
-          <text>tr</text>
+          <text>tr_</text>
           <length>-1</length>
           <precision>-1</precision>
           <isnull>N</isnull>
