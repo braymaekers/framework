@@ -407,7 +407,7 @@
       <name>PARAMETER_XML</name>
     </field>
   </checkpoint-log-table>
-  <pass_batchid>N</pass_batchid>
+  <pass_batchid>Y</pass_batchid>
   <shared_objects_file />
   <entries>
     <entry>
