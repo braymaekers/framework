@@ -1222,12 +1222,12 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
         <rightvalue />
         <value>
           <name>constant</name>
-          <type>Boolean</type>
-          <text>N</text>
+          <type>Integer</type>
+          <text>0</text>
           <length>-1</length>
-          <precision>-1</precision>
+          <precision>0</precision>
           <isnull>N</isnull>
-          <mask />
+          <mask>#</mask>
         </value>
       </condition>
     </compare>
@@ -1266,12 +1266,12 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
         <rightvalue />
         <value>
           <name>constant</name>
-          <type>Boolean</type>
-          <text>N</text>
+          <type>Integer</type>
+          <text>0</text>
           <length>-1</length>
-          <precision>-1</precision>
+          <precision>0</precision>
           <isnull>N</isnull>
-          <mask />
+          <mask>#</mask>
         </value>
       </condition>
     </compare>

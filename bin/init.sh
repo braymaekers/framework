@@ -8,7 +8,7 @@ echo "***" Running with "$PROJECT_ENV" environment settings "***"
 
 # Load Environment Configuration
 . $ROOT_DIR/$PROJECT_NAME-configuration/$PROJECT_ENV/env.conf
-echo "***" Setting PENTAHO_HOME to $PROJECT_HOME "***"
+echo "***" Setting PENTAHO_HOME to $PENTAHO_HOME "***"
 
 # Set Additional Variables
 export KETTLE_CLIENT_DIR="${KETTLE_CLIENT_DIR:-$PENTAHO_HOME/design-tools/data-integration}"

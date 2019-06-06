@@ -16,7 +16,7 @@
       </parameter>
       <parameter>
         <name>P_FILENAME</name>
-        <default_value />
+        <default_value>/Users/bepraymaekers/Documents/GitHub/sales_dwh/tests/tr_webservice_test</default_value>
         <description>test filename, including extension</description>
       </parameter>
       <parameter>
@@ -522,11 +522,6 @@
   </connection>
   <order>
     <hop>
-      <from>Transformation Executor</from>
-      <to>get trans results</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Success?</from>
       <to>build error tag</to>
       <enabled>Y</enabled>
@@ -562,13 +557,18 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>get trans results</from>
-      <to>ExecutionTimeSeconds</to>
+      <from>ExecutionTimeSeconds</from>
+      <to>get variables</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>ExecutionTimeSeconds</from>
-      <to>get variables</to>
+      <from>Transformation Executor</from>
+      <to>get trans results</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>get trans results</from>
+      <to>ExecutionTimeSeconds</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -651,12 +651,12 @@
         <rightvalue />
         <value>
           <name>constant</name>
-          <type>Boolean</type>
-          <text>N</text>
+          <type>Integer</type>
+          <text>0</text>
           <length>-1</length>
-          <precision>-1</precision>
+          <precision>0</precision>
           <isnull>N</isnull>
-          <mask />
+          <mask>#</mask>
         </value>
       </condition>
     </compare>

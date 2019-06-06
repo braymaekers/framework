@@ -598,6 +598,39 @@
     </GUI>
   </step>
   <step>
+    <name>ExecutionTimeSeconds</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>ExecutionTimeSeconds</field_name>
+      <formula_string>[ExecutionTime]/1000</formula_string>
+      <value_type>Number</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>448</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Job Executor</name>
     <type>JobExecutor</type>
     <description />
@@ -672,12 +705,12 @@
         <rightvalue />
         <value>
           <name>constant</name>
-          <type>Boolean</type>
-          <text>N</text>
+          <type>Integer</type>
+          <text>0</text>
           <length>-1</length>
-          <precision>-1</precision>
+          <precision>0</precision>
           <isnull>N</isnull>
-          <mask />
+          <mask>#</mask>
         </value>
       </condition>
     </compare>
@@ -938,39 +971,6 @@
       <draw>Y</draw>
     </GUI>
   </step>
-  <step>
-    <name>ExecutionTimeSeconds</name>
-    <type>Formula</type>
-    <description />
-    <distribute>Y</distribute>
-    <custom_distribution />
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name />
-    </partitioning>
-    <formula>
-      <field_name>ExecutionTimeSeconds</field_name>
-      <formula_string>[ExecutionTime]/1000</formula_string>
-      <value_type>Number</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <replace_field />
-    </formula>
-    <attributes />
-    <cluster_schema />
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>448</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
   <step_error_handling>
   </step_error_handling>
   <slave-step-copy-partition-distribution>
@@ -979,10 +979,6 @@
   <attributes>
     <group>
       <name>explorerState</name>
-      <attribute>
-        <key>ExecutionTimeSeconds</key>
-        <value />
-      </attribute>
     </group>
   </attributes>
 </transformation>
