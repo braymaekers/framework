@@ -471,7 +471,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>416</xloc>
+      <xloc>576</xloc>
       <yloc>64</yloc>
       <attributes_kjc />
     </entry>
@@ -513,6 +513,23 @@
       <yloc>64</yloc>
       <attributes_kjc />
     </entry>
+    <entry>
+      <name>sv-test.properties</name>
+      <description />
+      <type>SET_VARIABLES</type>
+      <attributes />
+      <replacevars>Y</replacevars>
+      <filename>${ROOT_DIR}/${P_PROJECT_NAME}-configuration/${CONFIG}/properties/test.properties</filename>
+      <file_variable_type>ROOT_JOB</file_variable_type>
+      <fields>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>416</xloc>
+      <yloc>64</yloc>
+      <attributes_kjc />
+    </entry>
   </entries>
   <hops>
     <hop>
@@ -526,12 +543,21 @@
     </hop>
     <hop>
       <from>tr_log_batch_id</from>
+      <to>sv-test.properties</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>sv-test.properties</from>
       <to>tr_test_executor</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
+      <unconditional>Y</unconditional>
     </hop>
   </hops>
   <notepads>

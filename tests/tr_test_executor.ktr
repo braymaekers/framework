@@ -500,27 +500,6 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       <bordercolorblue>100</bordercolorblue>
       <drawshadow>Y</drawshadow>
     </notepad>
-    <notepad>
-      <note>contains 'tr_'</note>
-      <xloc>288</xloc>
-      <yloc>352</yloc>
-      <width>87</width>
-      <heigth>26</heigth>
-      <fontname>.SF NS Text</fontname>
-      <fontsize>13</fontsize>
-      <fontbold>N</fontbold>
-      <fontitalic>N</fontitalic>
-      <fontcolorred>0</fontcolorred>
-      <fontcolorgreen>0</fontcolorgreen>
-      <fontcolorblue>0</fontcolorblue>
-      <backgroundcolorred>255</backgroundcolorred>
-      <backgroundcolorgreen>205</backgroundcolorgreen>
-      <backgroundcolorblue>112</backgroundcolorblue>
-      <bordercolorred>100</bordercolorred>
-      <bordercolorgreen>100</bordercolorgreen>
-      <bordercolorblue>100</bordercolorblue>
-      <drawshadow>Y</drawshadow>
-    </notepad>
   </notepads>
   <connection>
     <name>pdi_logging</name>
@@ -580,7 +559,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>load test-set.xml</from>
+      <from>load test-suite.xml</from>
       <to>variables</to>
       <enabled>Y</enabled>
     </hop>
@@ -1403,7 +1382,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
     </GUI>
   </step>
   <step>
-    <name>load test-set.xml</name>
+    <name>load test-suite.xml</name>
     <type>getXMLData</type>
     <description />
     <distribute>Y</distribute>
@@ -1427,7 +1406,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
     <rownum_field />
     <encoding>UTF-8</encoding>
     <file>
-      <name>${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-set.xml</name>
+      <name>${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-suite.xml</name>
       <filemask />
       <exclude_filemask />
       <file_required>N</file_required>
@@ -1467,6 +1446,21 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       <field>
         <name>location</name>
         <xpath>@location</xpath>
+        <element_type>attribut</element_type>
+        <result_type>valueof</result_type>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>type</name>
+        <xpath>@type</xpath>
         <element_type>attribut</element_type>
         <result_type>valueof</result_type>
         <type>String</type>
@@ -1552,15 +1546,23 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
     <fields>
       <field>
         <name>name</name>
+        <rename />
       </field>
       <field>
         <name>test_filename</name>
+        <rename />
       </field>
       <field>
         <name>class</name>
+        <rename />
       </field>
       <field>
         <name>npackage</name>
+        <rename />
+      </field>
+      <field>
+        <name>type</name>
+        <rename />
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -1760,13 +1762,13 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
     <compare>
       <condition>
         <negated>N</negated>
-        <leftvalue>test_filename</leftvalue>
-        <function>CONTAINS</function>
+        <leftvalue>type</leftvalue>
+        <function>=</function>
         <rightvalue />
         <value>
           <name>constant</name>
           <type>String</type>
-          <text>tr_</text>
+          <text>ktr</text>
           <length>-1</length>
           <precision>-1</precision>
           <isnull>N</isnull>
@@ -1880,6 +1882,10 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
   <attributes>
     <group>
       <name>explorerState</name>
+      <attribute>
+        <key>load test-suite.xml</key>
+        <value />
+      </attribute>
     </group>
   </attributes>
 </transformation>
