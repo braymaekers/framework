@@ -1406,7 +1406,7 @@ ${TESTS_HOME}/test-reports/results_final</note>
     <rownum_field />
     <encoding>UTF-8</encoding>
     <file>
-      <name>${TESTS_HOME}/test-suite.xml</name>
+      <name>${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-suite.xml</name>
       <filemask />
       <exclude_filemask />
       <file_required>N</file_required>
@@ -1798,7 +1798,7 @@ ${TESTS_HOME}/test-reports/results_final</note>
     </partitioning>
     <formula>
       <field_name>test_filename</field_name>
-      <formula_string>[tests_home]&amp;"/"&amp;[location]</formula_string>
+      <formula_string>[root_dir]&amp;"/"&amp;[project_name]&amp;"/tests/"&amp;[location]</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -1831,8 +1831,20 @@ ${TESTS_HOME}/test-reports/results_final</note>
     </partitioning>
     <fields>
       <field>
-        <name>tests_home</name>
-        <variable>${TESTS_HOME}</variable>
+        <name>root_dir</name>
+        <variable>${ROOT_DIR}</variable>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>project_name</name>
+        <variable>${P_PROJECT_NAME}</variable>
         <type>String</type>
         <format />
         <currency />
