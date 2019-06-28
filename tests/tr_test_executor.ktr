@@ -616,7 +616,7 @@ ${TESTS_HOME}/test-reports/results_final</note>
     <hop>
       <from>Append streams 2</from>
       <to>results_final</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Execute Trans</from>
@@ -1639,7 +1639,7 @@ ${TESTS_HOME}/test-reports/results_final</note>
     <fileNameField />
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${TESTS_HOME}/test-reports/results_final</name>
+      <name>${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>xml</extention>
