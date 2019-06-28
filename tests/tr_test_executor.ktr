@@ -616,7 +616,7 @@ ${TESTS_HOME}/test-reports/results_final</note>
     <hop>
       <from>Append streams 2</from>
       <to>results_final</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Execute Trans</from>
