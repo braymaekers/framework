@@ -519,7 +519,7 @@
       <type>SET_VARIABLES</type>
       <attributes />
       <replacevars>Y</replacevars>
-      <filename>${ROOT_DIR}/${P_PROJECT_NAME}-configuration/${CONFIG}/properties/test.properties</filename>
+      <filename>${ROOT_DIR}/${P_PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/test.properties</filename>
       <file_variable_type>ROOT_JOB</file_variable_type>
       <fields>
       </fields>

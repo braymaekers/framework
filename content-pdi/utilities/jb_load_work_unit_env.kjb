@@ -470,7 +470,7 @@
       <type>SET_VARIABLES</type>
       <attributes />
       <replacevars>Y</replacevars>
-      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}/configuration/${CONFIG}/properties/${P_WORK_UNIT_NAME}.properties</filename>
+      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}/configuration/${PROJECT_ENV}/properties/${P_WORK_UNIT_NAME}.properties</filename>
       <file_variable_type>PARENT_JOB</file_variable_type>
       <fields>
       </fields>
@@ -486,7 +486,7 @@
       <description />
       <type>FILE_EXISTS</type>
       <attributes />
-      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}/configuration/${CONFIG}/properties/${P_WORK_UNIT_NAME}.properties</filename>
+      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}/configuration/${PROJECT_ENV}/properties/${P_WORK_UNIT_NAME}.properties</filename>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
@@ -500,7 +500,7 @@
       <type>SET_VARIABLES</type>
       <attributes />
       <replacevars>Y</replacevars>
-      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}/configuration/${CONFIG}/properties/${P_PROJECT_NAME}.properties</filename>
+      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}/configuration/${PROJECT_ENV}/properties/${P_PROJECT_NAME}.properties</filename>
       <file_variable_type>ROOT_JOB</file_variable_type>
       <fields>
       </fields>
@@ -516,7 +516,7 @@
       <description />
       <type>FILE_EXISTS</type>
       <attributes />
-      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}/configuration/${CONFIG}/properties/${P_PROJECT_NAME}.properties</filename>
+      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}/configuration/${PROJECT_ENV}/properties/${P_PROJECT_NAME}.properties</filename>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>

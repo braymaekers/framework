@@ -458,10 +458,10 @@
 - P_PROJECT_NAME
 
 Tests Input:
-${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-set.xml</note>
+${TESTS_HOME}/test-suite.xml</note>
       <xloc>32</xloc>
       <yloc>32</yloc>
-      <width>248</width>
+      <width>148</width>
       <heigth>65</heigth>
       <fontname>Segoe UI</fontname>
       <fontsize>9</fontsize>
@@ -480,10 +480,10 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-set.xml</note>
     </notepad>
     <notepad>
       <note>Producing JUnit Test Report XML
-${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
+${TESTS_HOME}/test-reports/results_final</note>
       <xloc>704</xloc>
       <yloc>128</yloc>
-      <width>304</width>
+      <width>197</width>
       <heigth>32</heigth>
       <fontname>Segoe UI</fontname>
       <fontsize>9</fontsize>
@@ -659,13 +659,13 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>variables</from>
-      <to>test_filename</to>
+      <from>test_filename</from>
+      <to>Sort by order</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>test_filename</from>
-      <to>Sort by order</to>
+      <from>variables</from>
+      <to>test_filename</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -1406,7 +1406,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
     <rownum_field />
     <encoding>UTF-8</encoding>
     <file>
-      <name>${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-suite.xml</name>
+      <name>${TESTS_HOME}/test-suite.xml</name>
       <filemask />
       <exclude_filemask />
       <file_required>N</file_required>
@@ -1546,23 +1546,18 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
     <fields>
       <field>
         <name>name</name>
-        <rename />
       </field>
       <field>
         <name>test_filename</name>
-        <rename />
       </field>
       <field>
         <name>class</name>
-        <rename />
       </field>
       <field>
         <name>npackage</name>
-        <rename />
       </field>
       <field>
         <name>type</name>
-        <rename />
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -1644,7 +1639,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
     <fileNameField />
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</name>
+      <name>${TESTS_HOME}/test-reports/results_final</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>xml</extention>
@@ -1803,7 +1798,7 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
     </partitioning>
     <formula>
       <field_name>test_filename</field_name>
-      <formula_string>[root_dir]&amp;"/"&amp;[project_name]&amp;"/tests/"&amp;[location]</formula_string>
+      <formula_string>[tests_home]&amp;"/"&amp;[location]</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -1836,20 +1831,8 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
     </partitioning>
     <fields>
       <field>
-        <name>root_dir</name>
-        <variable>${ROOT_DIR}</variable>
-        <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>project_name</name>
-        <variable>${P_PROJECT_NAME}</variable>
+        <name>tests_home</name>
+        <variable>${TESTS_HOME}</variable>
         <type>String</type>
         <format />
         <currency />
@@ -1882,10 +1865,6 @@ ${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</note>
   <attributes>
     <group>
       <name>explorerState</name>
-      <attribute>
-        <key>load test-suite.xml</key>
-        <value />
-      </attribute>
     </group>
   </attributes>
 </transformation>
