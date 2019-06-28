@@ -535,7 +535,7 @@
       <description />
       <type>WRITE_TO_LOG</type>
       <attributes />
-      <logmessage>--</logmessage>
+      <logmessage>-----------------------</logmessage>
       <loglevel>Basic</loglevel>
       <logsubject>PROJECT_ENV = ${PROJECT_ENV}</logsubject>
       <parallel>N</parallel>
