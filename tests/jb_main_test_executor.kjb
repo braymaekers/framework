@@ -545,6 +545,23 @@
       <yloc>160</yloc>
       <attributes_kjc />
     </entry>
+    <entry>
+      <name>sv-test.properties 2</name>
+      <description />
+      <type>SET_VARIABLES</type>
+      <attributes />
+      <replacevars>Y</replacevars>
+      <filename>${ROOT_DIR}/${P_PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/test.properties</filename>
+      <file_variable_type>ROOT_JOB</file_variable_type>
+      <fields>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>160</xloc>
+      <yloc>256</yloc>
+      <attributes_kjc />
+    </entry>
   </entries>
   <hops>
     <hop>
@@ -552,7 +569,7 @@
       <to>tr_log_batch_id</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
       <evaluation>Y</evaluation>
       <unconditional>Y</unconditional>
     </hop>
@@ -561,7 +578,7 @@
       <to>sv-test.properties</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
       <evaluation>Y</evaluation>
       <unconditional>Y</unconditional>
     </hop>
@@ -570,7 +587,7 @@
       <to>tr_test_executor</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
       <evaluation>Y</evaluation>
       <unconditional>Y</unconditional>
     </hop>
@@ -579,8 +596,17 @@
       <to>Write to log</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
       <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>START</from>
+      <to>sv-test.properties 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
       <unconditional>Y</unconditional>
     </hop>
   </hops>
