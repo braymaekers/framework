@@ -535,7 +535,7 @@
       <description />
       <type>WRITE_TO_LOG</type>
       <attributes />
-      <logmessage />
+      <logmessage>-----</logmessage>
       <loglevel>Basic</loglevel>
       <logsubject>------------------------------- ${ROOT_DIR}/${P_PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/test.properties</logsubject>
       <parallel>N</parallel>
