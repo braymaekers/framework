@@ -1268,7 +1268,9 @@ ${TESTS_HOME}/test-reports/results_final</note>
     <limitRows>N</limitRows>
     <limitRowsNumber>0</limitRowsNumber>
     <logmessage>TEST_TEST = ${TEST_TEST}
-TESTS_HOME = ${TESTS_HOME}</logmessage>
+TESTS_HOME = ${TESTS_HOME}
+ROOT_DIR = ${ROOT_DIR}
+PROJECT_ENV = ${PROJECT_ENV}</logmessage>
     <fields>
       </fields>
     <attributes />
