@@ -1803,7 +1803,7 @@ ${TESTS_HOME}/test-reports/results_final</note>
     </partitioning>
     <formula>
       <field_name>test_filename</field_name>
-      <formula_string>[tests_home]&amp;[location]</formula_string>
+      <formula_string>[tests_home]&amp;"/"&amp;[location]</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
