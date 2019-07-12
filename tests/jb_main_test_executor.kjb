@@ -506,7 +506,7 @@
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
-      <parallel>N</parallel>
+      <parallel>Y</parallel>
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>256</xloc>
@@ -528,6 +528,21 @@
       <nr>0</nr>
       <xloc>416</xloc>
       <yloc>64</yloc>
+      <attributes_kjc />
+    </entry>
+    <entry>
+      <name>Write to log</name>
+      <description />
+      <type>WRITE_TO_LOG</type>
+      <attributes />
+      <logmessage />
+      <loglevel>Basic</loglevel>
+      <logsubject>------------------------------- ${ROOT_DIR}/${P_PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/test.properties</logsubject>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>384</xloc>
+      <yloc>160</yloc>
       <attributes_kjc />
     </entry>
   </entries>
@@ -557,6 +572,15 @@
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>tr_log_batch_id</from>
+      <to>Write to log</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
       <unconditional>Y</unconditional>
     </hop>
   </hops>
