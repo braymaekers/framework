@@ -688,11 +688,6 @@ ${TESTS_HOME}/test-reports/results_final</note>
       <to>Execute Trans</to>
       <enabled>Y</enabled>
     </hop>
-    <hop>
-      <from>name and filename</from>
-      <to>Write to log</to>
-      <enabled>Y</enabled>
-    </hop>
   </order>
   <step>
     <name>Abort</name>
@@ -1253,41 +1248,6 @@ ${TESTS_HOME}/test-reports/results_final</note>
     </GUI>
   </step>
   <step>
-    <name>Write to log</name>
-    <type>WriteToLog</type>
-    <description />
-    <distribute>Y</distribute>
-    <custom_distribution />
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name />
-    </partitioning>
-    <loglevel>log_level_basic</loglevel>
-    <displayHeader>N</displayHeader>
-    <limitRows>N</limitRows>
-    <limitRowsNumber>0</limitRowsNumber>
-    <logmessage>TEST_TEST = ${TEST_TEST}
-TESTS_HOME = ${TESTS_HOME}
-ROOT_DIR = ${ROOT_DIR}
-PROJECT_ENV = ${PROJECT_ENV}</logmessage>
-    <fields>
-      </fields>
-    <attributes />
-    <cluster_schema />
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>224</xloc>
-      <yloc>448</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>batch_id</name>
     <type>GetVariable</type>
     <description />
@@ -1446,7 +1406,7 @@ PROJECT_ENV = ${PROJECT_ENV}</logmessage>
     <rownum_field />
     <encoding>UTF-8</encoding>
     <file>
-      <name>${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-suite.xml</name>
+      <name>${TESTS_HOME}/test-suite.xml</name>
       <filemask />
       <exclude_filemask />
       <file_required>N</file_required>
@@ -1576,7 +1536,7 @@ PROJECT_ENV = ${PROJECT_ENV}</logmessage>
     <name>name and filename</name>
     <type>SelectValues</type>
     <description />
-    <distribute>N</distribute>
+    <distribute>Y</distribute>
     <custom_distribution />
     <copies>1</copies>
     <partitioning>
@@ -1586,18 +1546,23 @@ PROJECT_ENV = ${PROJECT_ENV}</logmessage>
     <fields>
       <field>
         <name>name</name>
+        <rename />
       </field>
       <field>
         <name>test_filename</name>
+        <rename />
       </field>
       <field>
         <name>class</name>
+        <rename />
       </field>
       <field>
         <name>npackage</name>
+        <rename />
       </field>
       <field>
         <name>type</name>
+        <rename />
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -1679,7 +1644,7 @@ PROJECT_ENV = ${PROJECT_ENV}</logmessage>
     <fileNameField />
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${ROOT_DIR}/${P_PROJECT_NAME}/tests/test-reports/results_final</name>
+      <name>${TESTS_HOME}/test-reports/results_final</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>xml</extention>
@@ -1838,7 +1803,7 @@ PROJECT_ENV = ${PROJECT_ENV}</logmessage>
     </partitioning>
     <formula>
       <field_name>test_filename</field_name>
-      <formula_string>[root_dir]&amp;"/"&amp;[project_name]&amp;"/tests/"&amp;[location]</formula_string>
+      <formula_string>[tests_home]&amp;[location]</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -1871,20 +1836,8 @@ PROJECT_ENV = ${PROJECT_ENV}</logmessage>
     </partitioning>
     <fields>
       <field>
-        <name>root_dir</name>
-        <variable>${ROOT_DIR}</variable>
-        <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>project_name</name>
-        <variable>${P_PROJECT_NAME}</variable>
+        <name>tests_home</name>
+        <variable>${TESTS_HOME}</variable>
         <type>String</type>
         <format />
         <currency />
