@@ -477,7 +477,7 @@
       <type>SET_VARIABLES</type>
       <attributes />
       <replacevars>Y</replacevars>
-      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/${P_PROJECT_NAME}.properties</filename>
+      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/project.properties</filename>
       <file_variable_type>ROOT_JOB</file_variable_type>
       <fields>
       </fields>
@@ -508,7 +508,7 @@
       <description />
       <type>WRITE_TO_LOG</type>
       <attributes />
-      <logmessage>Missing properties file for ${P_JOB_NAME} on ${P_PROJECT_NAME}</logmessage>
+      <logmessage>Missing project.properties file for ${P_JOB_NAME} on ${P_PROJECT_NAME}</logmessage>
       <loglevel>Minimal</loglevel>
       <logsubject>*** ERROR: LOAD PROJECT ENVIRONMENT ***</logsubject>
       <parallel>N</parallel>
