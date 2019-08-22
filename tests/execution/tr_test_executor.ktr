@@ -454,17 +454,14 @@
   </info>
   <notepads>
     <notepad>
-      <note>Load the project tests
-- P_PROJECT_NAME
-
-Tests Input:
-${TESTS_HOME}/test-suite.xml</note>
-      <xloc>32</xloc>
-      <yloc>32</yloc>
-      <width>148</width>
-      <heigth>65</heigth>
-      <fontname>Segoe UI</fontname>
-      <fontsize>9</fontsize>
+      <note>Producing JUnit Test Report XML
+${TEST_HOME}/test-reports/results_final</note>
+      <xloc>704</xloc>
+      <yloc>64</yloc>
+      <width>258</width>
+      <heigth>42</heigth>
+      <fontname>.SF NS Text</fontname>
+      <fontsize>13</fontsize>
       <fontbold>N</fontbold>
       <fontitalic>N</fontitalic>
       <fontcolorred>0</fontcolorred>
@@ -479,14 +476,17 @@ ${TESTS_HOME}/test-suite.xml</note>
       <drawshadow>Y</drawshadow>
     </notepad>
     <notepad>
-      <note>Producing JUnit Test Report XML
-${TESTS_HOME}/test-reports/results_final</note>
-      <xloc>704</xloc>
-      <yloc>128</yloc>
-      <width>197</width>
-      <heigth>32</heigth>
-      <fontname>Segoe UI</fontname>
-      <fontsize>9</fontsize>
+      <note>Load the project tests
+- P_PROJECT_NAME
+
+Tests Input:
+${TEST_HOME}/test-suite.xml</note>
+      <xloc>32</xloc>
+      <yloc>64</yloc>
+      <width>192</width>
+      <heigth>90</heigth>
+      <fontname>.SF NS Text</fontname>
+      <fontsize>13</fontsize>
       <fontbold>N</fontbold>
       <fontitalic>N</fontitalic>
       <fontcolorred>0</fontcolorred>
@@ -769,8 +769,8 @@ ${TESTS_HOME}/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1216</xloc>
-      <yloc>288</yloc>
+      <xloc>960</xloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -796,8 +796,8 @@ ${TESTS_HOME}/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1344</xloc>
-      <yloc>288</yloc>
+      <xloc>1088</xloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -839,7 +839,7 @@ ${TESTS_HOME}/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1344</xloc>
+      <xloc>1088</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1345,8 +1345,8 @@ ${TESTS_HOME}/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1216</xloc>
-      <yloc>192</yloc>
+      <xloc>960</xloc>
+      <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1376,8 +1376,8 @@ ${TESTS_HOME}/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>960</xloc>
-      <yloc>288</yloc>
+      <xloc>704</xloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1609,8 +1609,8 @@ ${TESTS_HOME}/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1088</xloc>
-      <yloc>288</yloc>
+      <xloc>832</xloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1678,8 +1678,8 @@ ${TESTS_HOME}/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1472</xloc>
-      <yloc>288</yloc>
+      <xloc>1216</xloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1711,8 +1711,8 @@ ${TESTS_HOME}/test-reports/results_final</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1088</xloc>
-      <yloc>192</yloc>
+      <xloc>832</xloc>
+      <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
