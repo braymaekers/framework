@@ -501,57 +501,6 @@ ${TESTS_HOME}/test-reports/results_final</note>
       <drawshadow>Y</drawshadow>
     </notepad>
   </notepads>
-  <connection>
-    <name>pdi_logging</name>
-    <server>${PDI_LOGGING.HOST}</server>
-    <type>POSTGRESQL</type>
-    <access>Native</access>
-    <database>${PDI_LOGGING.DB}</database>
-    <port>${PDI_LOGGING.PORT}</port>
-    <username>${PDI_LOGGING.USER}</username>
-    <password>${PDI_LOGGING.PASS}</password>
-    <servername />
-    <data_tablespace />
-    <index_tablespace />
-    <attributes>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>${PDI_LOGGING.PORT}</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
-    </attributes>
-  </connection>
   <order>
     <hop>
       <from>Sort by order</from>
@@ -1406,7 +1355,7 @@ ${TESTS_HOME}/test-reports/results_final</note>
     <rownum_field />
     <encoding>UTF-8</encoding>
     <file>
-      <name>${TESTS_HOME}/test-suite.xml</name>
+      <name>${TEST_HOME}/test-suite.xml</name>
       <filemask />
       <exclude_filemask />
       <file_required>N</file_required>
@@ -1546,23 +1495,18 @@ ${TESTS_HOME}/test-reports/results_final</note>
     <fields>
       <field>
         <name>name</name>
-        <rename />
       </field>
       <field>
         <name>test_filename</name>
-        <rename />
       </field>
       <field>
         <name>class</name>
-        <rename />
       </field>
       <field>
         <name>npackage</name>
-        <rename />
       </field>
       <field>
         <name>type</name>
-        <rename />
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -1644,7 +1588,7 @@ ${TESTS_HOME}/test-reports/results_final</note>
     <fileNameField />
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${TESTS_HOME}/test-reports/results_final</name>
+      <name>${TEST_HOME}/test-reports/results_final</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>xml</extention>
@@ -1803,7 +1747,7 @@ ${TESTS_HOME}/test-reports/results_final</note>
     </partitioning>
     <formula>
       <field_name>test_filename</field_name>
-      <formula_string>[tests_home]&amp;"/"&amp;[location]</formula_string>
+      <formula_string>[test_home]&amp;"/"&amp;[location]</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -1836,8 +1780,8 @@ ${TESTS_HOME}/test-reports/results_final</note>
     </partitioning>
     <fields>
       <field>
-        <name>tests_home</name>
-        <variable>${TESTS_HOME}</variable>
+        <name>test_home</name>
+        <variable>${TEST_HOME}</variable>
         <type>String</type>
         <format />
         <currency />
