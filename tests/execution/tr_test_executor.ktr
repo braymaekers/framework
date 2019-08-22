@@ -501,6 +501,57 @@ ${TESTS_HOME}/test-reports/results_final</note>
       <drawshadow>Y</drawshadow>
     </notepad>
   </notepads>
+  <connection>
+    <name>pdi_logging</name>
+    <server>${PDI_LOGGING.HOST}</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>${PDI_LOGGING.DB}</database>
+    <port>${PDI_LOGGING.PORT}</port>
+    <username>${PDI_LOGGING.USER}</username>
+    <password>${PDI_LOGGING.PASS}</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>${PDI_LOGGING.PORT}</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
   <order>
     <hop>
       <from>Sort by order</from>
@@ -857,7 +908,7 @@ ${TESTS_HOME}/test-reports/results_final</note>
     <specification_method>filename</specification_method>
     <trans_object_id />
     <trans_name />
-    <filename>${FRAMEWORK_DIR}/tests/tr_execute_test_job.ktr</filename>
+    <filename>${FRAMEWORK_DIR}/tests/execution/tr_execute_test_job.ktr</filename>
     <directory_path />
     <group_size>1</group_size>
     <group_field />
@@ -944,7 +995,7 @@ ${TESTS_HOME}/test-reports/results_final</note>
     <specification_method>filename</specification_method>
     <trans_object_id />
     <trans_name />
-    <filename>${FRAMEWORK_DIR}/tests/tr_execute_test_trans.ktr</filename>
+    <filename>${FRAMEWORK_DIR}/tests/execution/tr_execute_test_trans.ktr</filename>
     <directory_path />
     <group_size>1</group_size>
     <group_field />

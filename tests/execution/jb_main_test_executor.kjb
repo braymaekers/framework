@@ -439,7 +439,7 @@
       <attributes />
       <specification_method>filename</specification_method>
       <trans_object_id />
-      <filename>${FRAMEWORK_DIR}/tests/tr_test_executor.ktr</filename>
+      <filename>${FRAMEWORK_DIR}/tests/execution/tr_test_executor.ktr</filename>
       <transname />
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
