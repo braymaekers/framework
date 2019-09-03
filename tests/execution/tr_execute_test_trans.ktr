@@ -742,7 +742,7 @@
     </partitioning>
     <formula>
       <field_name>tag</field_name>
-      <formula_string>"&lt;testcase name=\""+name+"\" classname=\""+group+"\" package=\""+npackage+"\" time=\""+"\">"+ExecutionTimeSeconds+"&lt;failure type=\"type\" message=\"ERROR Found\" />&lt;system-out>&lt;![CDATA["+ExecutionLogText+"]]&gt;&lt;/system-out>&lt;/testcase>"</formula_string>
+      <formula_string>"&lt;testcase name=\""+name+"\" classname=\""+group+"\" package=\""+npackage+"\" time=\""+ExecutionTimeSeconds+"\">"+"&lt;failure type=\"type\" message=\"ERROR Found\" />&lt;system-out>&lt;![CDATA["+ExecutionLogText+"]]&gt;&lt;/system-out>&lt;/testcase>"</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>

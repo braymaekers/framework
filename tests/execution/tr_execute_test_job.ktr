@@ -522,7 +522,7 @@
   </connection>
   <order>
     <hop>
-      <from>get variables</from>
+      <from>get parameters</from>
       <to>Success?</to>
       <enabled>Y</enabled>
     </hop>
@@ -568,7 +568,7 @@
     </hop>
     <hop>
       <from>ExecutionTimeSeconds</from>
-      <to>get variables</to>
+      <to>get parameters</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -875,7 +875,7 @@
     </GUI>
   </step>
   <step>
-    <name>get variables</name>
+    <name>get parameters</name>
     <type>GetVariable</type>
     <description />
     <distribute>Y</distribute>

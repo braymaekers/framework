@@ -599,7 +599,7 @@ ${TEST_HOME}/test-suite.xml</note>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Execute Trans</from>
+      <from>tr_execute_test_trans</from>
       <to>split</to>
       <enabled>Y</enabled>
     </hop>
@@ -619,7 +619,7 @@ ${TEST_HOME}/test-suite.xml</note>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Execute Trans</from>
+      <from>tr_execute_test_trans</from>
       <to>Success?</to>
       <enabled>Y</enabled>
     </hop>
@@ -649,12 +649,12 @@ ${TEST_HOME}/test-suite.xml</note>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Execute Job</from>
+      <from>tr_execute_test_job</from>
       <to>split</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Execute Job</from>
+      <from>tr_execute_test_job</from>
       <to>Success? 2</to>
       <enabled>Y</enabled>
     </hop>
@@ -680,12 +680,12 @@ ${TEST_HOME}/test-suite.xml</note>
     </hop>
     <hop>
       <from>split based on type</from>
-      <to>Execute Job</to>
+      <to>tr_execute_test_job</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>split based on type</from>
-      <to>Execute Trans</to>
+      <to>tr_execute_test_trans</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -895,7 +895,7 @@ ${TEST_HOME}/test-suite.xml</note>
     </GUI>
   </step>
   <step>
-    <name>Execute Job</name>
+    <name>tr_execute_test_job</name>
     <type>TransExecutor</type>
     <description />
     <distribute>Y</distribute>
@@ -982,7 +982,7 @@ ${TEST_HOME}/test-suite.xml</note>
     </GUI>
   </step>
   <step>
-    <name>Execute Trans</name>
+    <name>tr_execute_test_trans</name>
     <type>TransExecutor</type>
     <description />
     <distribute>Y</distribute>
@@ -1752,8 +1752,8 @@ ${TEST_HOME}/test-suite.xml</note>
       <method>none</method>
       <schema_name />
     </partitioning>
-    <send_true_to>Execute Trans</send_true_to>
-    <send_false_to>Execute Job</send_false_to>
+    <send_true_to>tr_execute_test_trans</send_true_to>
+    <send_false_to>tr_execute_test_job</send_false_to>
     <compare>
       <condition>
         <negated>N</negated>
@@ -1865,6 +1865,14 @@ ${TEST_HOME}/test-suite.xml</note>
   <attributes>
     <group>
       <name>explorerState</name>
+      <attribute>
+        <key>tr_execute_test_job</key>
+        <value />
+      </attribute>
+      <attribute>
+        <key>tr_execute_test_trans</key>
+        <value />
+      </attribute>
     </group>
   </attributes>
 </transformation>
