@@ -1,2 +1,5 @@
 CALL init.bat
-CALL %KETTLE_CLIENT_DIR%\Kitchen.bat %OPT% %*
+
+REM For Kitchen to work, you have to CD to the data-integration folder
+cd %KETTLE_CLIENT_DIR%
+CALL Kitchen.bat %OPT% %*

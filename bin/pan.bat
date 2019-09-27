@@ -1,2 +1,3 @@
 CALL init.bat
-CALL %KETTLE_CLIENT_DIR%\Pan.bat %OPT% %*
+cd %KETTLE_CLIENT_DIR%
+CALL Pan.bat %OPT% %*

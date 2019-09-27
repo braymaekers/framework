@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <job>
   <name>jb_load_job_env</name>
-  <description />
-  <extended_description />
-  <job_version />
+  <description/>
+  <extended_description/>
+  <job_version/>
   <job_status>0</job_status>
   <directory>/</directory>
   <created_user>-</created_user>
@@ -13,75 +13,24 @@
   <parameters>
     <parameter>
       <name>P_JOB_NAME</name>
-      <default_value />
-      <description />
+      <default_value>jb_main_sales_dwh_staging</default_value>
+      <description/>
     </parameter>
     <parameter>
       <name>P_PROJECT_NAME</name>
-      <default_value />
-      <description />
+      <default_value>sales_dwh</default_value>
+      <description/>
     </parameter>
   </parameters>
-  <connection>
-    <name>pdi_logging</name>
-    <server>${PDI_LOGGING.HOST}</server>
-    <type>POSTGRESQL</type>
-    <access>Native</access>
-    <database>${PDI_LOGGING.DB}</database>
-    <port>${PDI_LOGGING.PORT}</port>
-    <username>${PDI_LOGGING.USER}</username>
-    <password>${PDI_LOGGING.PASS}</password>
-    <servername />
-    <data_tablespace />
-    <index_tablespace />
-    <attributes>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>${PDI_LOGGING.PORT}</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
-    </attributes>
-  </connection>
   <slaveservers>
     </slaveservers>
   <job-log-table>
-    <connection />
-    <schema />
-    <table />
-    <size_limit_lines />
-    <interval />
-    <timeout_days />
+    <connection/>
+    <schema/>
+    <table/>
+    <size_limit_lines/>
+    <interval/>
+    <timeout_days/>
     <field>
       <id>ID_JOB</id>
       <enabled>Y</enabled>
@@ -189,10 +138,10 @@
     </field>
   </job-log-table>
   <jobentry-log-table>
-    <connection />
-    <schema />
-    <table />
-    <timeout_days />
+    <connection/>
+    <schema/>
+    <table/>
+    <timeout_days/>
     <field>
       <id>ID_BATCH</id>
       <enabled>Y</enabled>
@@ -280,10 +229,10 @@
     </field>
   </jobentry-log-table>
   <channel-log-table>
-    <connection />
-    <schema />
-    <table />
-    <timeout_days />
+    <connection/>
+    <schema/>
+    <table/>
+    <timeout_days/>
     <field>
       <id>ID_BATCH</id>
       <enabled>Y</enabled>
@@ -346,13 +295,13 @@
     </field>
   </channel-log-table>
   <checkpoint-log-table>
-    <connection />
-    <schema />
-    <table />
-    <timeout_days />
-    <max_nr_retries />
-    <run_retry_period />
-    <namespace_parameter />
+    <connection/>
+    <schema/>
+    <table/>
+    <timeout_days/>
+    <max_nr_retries/>
+    <run_retry_period/>
+    <namespace_parameter/>
     <save_parameters>Y</save_parameters>
     <save_result_rows>Y</save_result_rows>
     <save_result_files>Y</save_result_files>
@@ -413,13 +362,13 @@
     </field>
   </checkpoint-log-table>
   <pass_batchid>N</pass_batchid>
-  <shared_objects_file />
+  <shared_objects_file/>
   <entries>
     <entry>
       <name>START</name>
-      <description />
+      <description/>
       <type>SPECIAL</type>
-      <attributes />
+      <attributes/>
       <start>Y</start>
       <dummy>N</dummy>
       <repeat>N</repeat>
@@ -435,27 +384,27 @@
       <nr>0</nr>
       <xloc>64</xloc>
       <yloc>128</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>Success</name>
-      <description />
+      <description/>
       <type>SUCCESS</type>
-      <attributes />
+      <attributes/>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>1184</xloc>
       <yloc>128</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>sv-V_JOB_NAME</name>
-      <description />
+      <description/>
       <type>SET_VARIABLES</type>
-      <attributes />
+      <attributes/>
       <replacevars>Y</replacevars>
-      <filename />
+      <filename/>
       <file_variable_type>ROOT_JOB</file_variable_type>
       <fields>
         <field>
@@ -469,15 +418,15 @@
       <nr>0</nr>
       <xloc>384</xloc>
       <yloc>128</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>sv-project</name>
-      <description />
+      <description/>
       <type>SET_VARIABLES</type>
-      <attributes />
+      <attributes/>
       <replacevars>Y</replacevars>
-      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/project.properties</filename>
+      <filename>${CONFIG_DIR}/${PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/project.properties</filename>
       <file_variable_type>ROOT_JOB</file_variable_type>
       <fields>
       </fields>
@@ -486,13 +435,13 @@
       <nr>0</nr>
       <xloc>864</xloc>
       <yloc>128</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>wtl-load_project_environment</name>
-      <description />
+      <description/>
       <type>WRITE_TO_LOG</type>
-      <attributes />
+      <attributes/>
       <logmessage> </logmessage>
       <loglevel>Minimal</loglevel>
       <logsubject>*** INFO: LOADING PROJECT AND JOB ENVIRONMENT ***</logsubject>
@@ -501,13 +450,13 @@
       <nr>0</nr>
       <xloc>224</xloc>
       <yloc>128</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>wtl-missing_project_properties</name>
-      <description />
+      <description/>
       <type>WRITE_TO_LOG</type>
-      <attributes />
+      <attributes/>
       <logmessage>Missing project.properties file for ${P_JOB_NAME} on ${P_PROJECT_NAME}</logmessage>
       <loglevel>Minimal</loglevel>
       <logsubject>*** ERROR: LOAD PROJECT ENVIRONMENT ***</logsubject>
@@ -516,15 +465,15 @@
       <nr>0</nr>
       <xloc>864</xloc>
       <yloc>256</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>sv-job</name>
-      <description />
+      <description/>
       <type>SET_VARIABLES</type>
-      <attributes />
+      <attributes/>
       <replacevars>Y</replacevars>
-      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/${V_JOB_NAME}.properties</filename>
+      <filename>${CONFIG_HOME}/properties/${V_JOB_NAME}.properties</filename>
       <file_variable_type>ROOT_JOB</file_variable_type>
       <fields>
       </fields>
@@ -533,28 +482,28 @@
       <nr>0</nr>
       <xloc>1024</xloc>
       <yloc>256</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>fe-job</name>
-      <description />
+      <description/>
       <type>FILE_EXISTS</type>
-      <attributes />
-      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/${V_JOB_NAME}.properties</filename>
+      <attributes/>
+      <filename>${CONFIG_HOME}/properties/${V_JOB_NAME}.properties</filename>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>1024</xloc>
       <yloc>128</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>sv-framework</name>
-      <description />
+      <description/>
       <type>SET_VARIABLES</type>
-      <attributes />
+      <attributes/>
       <replacevars>Y</replacevars>
-      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/framework.properties</filename>
+      <filename>${CONFIG_DIR}/${PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/framework.properties</filename>
       <file_variable_type>ROOT_JOB</file_variable_type>
       <fields>
       </fields>
@@ -563,13 +512,13 @@
       <nr>0</nr>
       <xloc>544</xloc>
       <yloc>128</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>wtl-missing_framework_properties</name>
-      <description />
+      <description/>
       <type>WRITE_TO_LOG</type>
-      <attributes />
+      <attributes/>
       <logmessage>Missing framework.properties file</logmessage>
       <loglevel>Minimal</loglevel>
       <logsubject>*** ERROR: LOAD PROJECT ENVIRONMENT ***</logsubject>
@@ -578,15 +527,15 @@
       <nr>0</nr>
       <xloc>544</xloc>
       <yloc>256</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>sv-common</name>
-      <description />
+      <description/>
       <type>SET_VARIABLES</type>
-      <attributes />
+      <attributes/>
       <replacevars>Y</replacevars>
-      <filename>${CONFIG_DIR}/${P_PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/common.properties</filename>
+      <filename>${CONFIG_DIR}/${PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/common.properties</filename>
       <file_variable_type>ROOT_JOB</file_variable_type>
       <fields>
       </fields>
@@ -595,13 +544,13 @@
       <nr>0</nr>
       <xloc>704</xloc>
       <yloc>128</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>wtl-missing_common_properties</name>
-      <description />
+      <description/>
       <type>WRITE_TO_LOG</type>
-      <attributes />
+      <attributes/>
       <logmessage>Missing common.properties file</logmessage>
       <loglevel>Minimal</loglevel>
       <logsubject>*** ERROR: LOAD COMMON ENVIRONMENT ***</logsubject>
@@ -610,7 +559,7 @@
       <nr>0</nr>
       <xloc>704</xloc>
       <yloc>256</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
   </entries>
   <hops>
@@ -707,6 +656,15 @@
     <hop>
       <from>sv-project</from>
       <to>fe-job</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>sv-job</from>
+      <to>Success</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
